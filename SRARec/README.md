@@ -1,6 +1,5 @@
 # SRARec – Methods
 
-**For CoViE study analyses move to the [Exclusive_CoViE](https://github.com/ldgonzalezvazquez/SRARec/tree/Exclusive_CoViE) branch.** 
 ---
 SRARec is developed in Python 3 and distributed as open-source software (MIT License). The source code, along with detailed documentation and the graphical interface, is available in the authors' GitHub repository (link; version 1.1.1 in the publication) for free use and adaptation. Internally, SRARec integrates several proven sequence alignment and processing tools.
 The software is designed to process samples from the three major sequencer manufacturers: Illumina, Oxford Nanopore Technologies (ONT), and Pacific Biosciences (PacBio), with both single-end (SE) and paired-end (PE) samples. It automatically connects to the NCBI Sequence Read Archive (SRA–NCBI) database (Kans, 2013; Leinonen et al., 2011). When starting the tool, you can select local mode by specifying one (SE) or two (PE) FASTQ files, a BAM file, or NCBI–SRA modo by entering a database accession code (standard format: (S/E)RRXXXXXXXX).
@@ -24,15 +23,6 @@ The results with SRARec, although not exactly identical, were located near the r
 Real-world data analysis (SARS-CoV-2 and HIV-1)
 We downloaded the identifiers for all NCBI SARS-CoV-2 and HIV-1 SRA entries as of September 2, 2025 [update at the end with our HIV-1 results]. We ran the analysis in parallel at the Galician Supercomputing Center (CESGA) with default parameters and in "slow" mode (see above). We obtained results on 500,000 SARS-CoV-2 SRAs and 1,700 HIV-1 SRAs.
 
-Partial results [until August 8, 2025 - ≈350,000 SRAs]:
-<img width="990" height="550" alt="Partial_res_18Ago" src="https://github.com/user-attachments/assets/431c1083-6629-4817-876f-233fb5c02741" />
-
-Final results [December 12, 2025 - ≈600,000 SC2 SRAs & ≈ 5,000 HIV-1 SRAs from Ravi Paper]:
-
-[SC2](https://github.com/ldgonzalezvazquez/SRARec/blob/main/SC2_20251214_224201.html)
-
-
-[HIV-1](https://github.com/ldgonzalezvazquez/SRARec/blob/main/HIV-1_20251212_163459.html)
 
 # [generate_graphs.py](https://github.com/ldgonzalezvazquez/SRARec/blob/main/generate_graphs.py)
 
@@ -56,6 +46,7 @@ Auxiliary curves from BegFin_Reads
   and cumulative sum (range coverage).
 - Begfin concentration: counts read starts and ends, adding only at start and
   end of each read (start/end density).
+  
 ### Main CLI arguments
 
 - `--results PATH` — input results file  
