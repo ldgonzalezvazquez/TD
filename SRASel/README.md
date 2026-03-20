@@ -39,11 +39,8 @@ Execution of [SRASel.py](https://github.com/ldgonzalezvazquez/SRASel/blob/main/S
 
 Result plots are created (openable from the patients’ plot pop-ups in HTML) for all positions with a selected variant—showing the fitted slope and time points of all variants (point size encodes total and variant coverage at each time). Selected variants are colored red (β>0), blue (β<0), or gray (p-value > 0.05). Two additional guide lines are drawn: the mean β over all selected slopes for that patient (black dashed) and the mean β over all slopes, including non-selected (gray dashed).
 
-<img width="360" height="230" alt="pos25916_ALL" src="https://github.com/user-attachments/assets/39df72e2-1ffb-4f28-97e0-e45f9386d25f" />
 
 Genomic plots are also created (openable from the pop-ups in HTML). These show a scatter of selected sites along the genome (red = β>0; blue = β<0) against their slope. In addition, sign-specific density curves are drawn and scaled to visualization (axis values are not meaningful): the curve reflects only the existence of selected sites, not slope magnitude, and is obtained by summing Gaussian kernels with σ = 350 bp per point (≈68% of each kernel’s mass within ±350 bp). The same two guide lines (black dashed for selected slopes’ mean; gray dashed for all slopes’ mean) are shown. A gene track based on NC_045512.2.gb is included. This plot visually identifies regions under stronger selection in specific patients without averaging.
-
-<img width="936" height="360" alt="034-AA_genome_selection" src="https://github.com/user-attachments/assets/87917453-9d5f-40c9-99c2-d6dee3c9e498" />
 
 Summary files required by the next script are also produced.
 
@@ -58,7 +55,6 @@ An HTML report with two additional parameters is produced:
 
 - UPGMA showing relationships between patients taking into account the intersections of selected positions [differentiating the variant and the direction of selection].
 
-(See [drive](https://drive.google.com/drive/folders/1KLlXnsWeM3sgiFwZSOV15ZIJCGmzuUqJ?usp=sharing) for graphs and partial results)
 
 **References:**
 
